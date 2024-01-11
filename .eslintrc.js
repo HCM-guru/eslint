@@ -1,12 +1,11 @@
+// eslint-disable-next-line no-undef
 module.exports = {
   "extends": [
-    "plugin:@typescript-eslint/stylistic",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended"
   ],
   "plugins": [
-    "@typescript-eslint",
-    "no-for-of-loops"
+    "@typescript-eslint"
   ],
   "rules": {
     "for-direction": "off",
@@ -31,7 +30,6 @@ module.exports = {
     "no-invalid-regexp": "error",
     "no-irregular-whitespace": "error",
     "no-obj-calls": "error",
-    "no-prototype-builtins": "off",
     "no-regex-spaces": "error",
     "no-sparse-arrays": "error",
     "no-template-curly-in-string": "off",
@@ -76,7 +74,6 @@ module.exports = {
     "no-labels": "off",
     "no-lone-blocks": "off",
     "no-loop-func": "off",
-    "no-magic-numbers": "off",
     "no-multi-spaces": "error",
     "no-multi-str": "off",
     "no-new": "off",
@@ -139,7 +136,6 @@ module.exports = {
     "brace-style": "error",
     "capitalized-comments": "off",
     "comma-dangle": "off",
-    "comma-spacing": "error",
     "comma-style": "error",
     "computed-property-spacing": "error",
     "consistent-this": "off",
@@ -153,6 +149,7 @@ module.exports = {
     "id-blacklist": "off",
     "id-length": "off",
     "id-match": "off",
+    /* eslint-disable no-magic-numbers */
     "indent": ["error", 2, {
       "SwitchCase": 1
     }],
@@ -226,7 +223,6 @@ module.exports = {
       "anonymous": "never",
       "named": "never"
     }],
-    "space-in-parens": "off",
     "space-infix-ops": "off",
     "space-unary-ops": "off",
     "spaced-comment": ["error", "always"],
@@ -264,6 +260,22 @@ module.exports = {
     "sort-imports": "off",
     "symbol-description": "off",
     "template-curly-spacing": "off",
-    "yield-star-spacing": ["error", "after"]
+    "yield-star-spacing": ["error", "after"],
+    "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/semi": "error",
+    "@typescript-eslint/indent": ["error", 2],
+    "@typescript-eslint/space-before-function-paren": ["error", "never"],
+    "space-in-parens": ["error", "never"],
+    "comma-spacing": ["error", {
+      "before": false,
+      "after": true
+    }],
+    "no-magic-numbers": "error",
+    "@typescript-eslint/no-array-constructor": "error",
+    "@typescript-eslint/type-annotation-spacing": "error",
+    "@typescript-eslint/array-type": "error",
+    "no-prototype-builtins": "error"
   }
-}
+};
