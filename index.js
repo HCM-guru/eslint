@@ -272,10 +272,11 @@ module.exports = {
       "before": false,
       "after": true
     }],
-    "no-magic-numbers": "error",
     "@typescript-eslint/no-array-constructor": "error",
     "@typescript-eslint/type-annotation-spacing": "error",
     "@typescript-eslint/array-type": "error",
-    "no-prototype-builtins": "error"
+    "no-prototype-builtins": "error",
+    "object-curly-spacing": ["error", "always"],
+    "object-curly-newline": ["error", { "consistent": true }]
   }
 };
